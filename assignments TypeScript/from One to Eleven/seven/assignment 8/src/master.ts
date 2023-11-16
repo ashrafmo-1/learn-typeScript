@@ -1,7 +1,10 @@
-const printInConsole = (...value: (number | string | boolean)[]) => {
-}
-
 // Write The Function Here
+const printInConsole = (...value: (number | string | boolean)[]) => {
+    for (const arg of value) {
+        console.log(`The Value Is ${arg} And Type Is ${typeof arg}`);
+    }
+    console.log("Done");
+}
 
 // Using The Function => Do Not Edit
 console.log(printInConsole(1, 2, 3, 4, 5));

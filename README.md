@@ -1,7 +1,7 @@
 # learn typeScript
 
 
-assignments from elzero academy
+<h3 align="center">assignments from elzero academy</h3>
 
     https://elzero.org/category/assignments/typescript-assignments/
 

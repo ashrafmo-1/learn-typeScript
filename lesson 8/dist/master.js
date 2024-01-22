@@ -1,28 +1,20 @@
-
+"use strict";
 // noImplicitAny
-
-
-
-let message = true
-
-function info(name: string, age: number, salary: number): string {
+let message = true;
+function info(name, age, salary) {
     const hello = 100;
-    if(message){
+    if (message) {
         return `my name is ${name}, my age is ${age}, my salary is ${salary}, test variabble ${hello}`;
     }
-    return `no data found`
+    return `no data found`;
 }
-
 console.log(info('ashraf', 40, 5000));
-
-
 // my test example.
-let learn: string = 'typeScript'
-const sayWelcome = (userName: string, age: number, learn: string) => {
-    if(learn === 'string') {
+let learn = 'typeScript';
+const sayWelcome = (userName, age, learn) => {
+    if (learn === 'string') {
         return `Welcome ${userName}, your age is ${age} and you learn ${learn}`;
     }
-    return 'done condition'
-}
-
+    return 'done condition';
+};
 console.log(sayWelcome('ashraf', 21, learn));

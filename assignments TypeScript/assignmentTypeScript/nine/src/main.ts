@@ -1,4 +1,13 @@
 // Write The Function Here
+function printInConsole(...values: string[] | number[] | boolean[]): string {
+    for (let i = 0; i < values.length; i++) {
+        console.log(`The Value ${values[i]} And Type of ${typeof values[i]}`);
+        }
+        values.forEach((val)=> {
+        //     return `The Value ${values[i]} And Type of ${typeof values[i]}`;
+    })
+    return 'done'
+}
 
 // Using The Function => Do Not Edit
 console.log(printInConsole(1, 2, 3, 4, 5));

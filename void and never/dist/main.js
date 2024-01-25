@@ -1,3 +1,4 @@
+"use strict";
 /*
 void
     - Function That Will Return Nothing
@@ -8,40 +9,25 @@ never
 
 
 */
-
-type str = string;
-
 // function form(user: string) {
 //     console.log(`welcome: ${user}`);
 //     return 'welcome:' + user;
 // };
-
 // form('loda')
-
-
-function form(user: string): void {
+function form(user) {
     console.log(`welcome: ${user}`);
     return;
-};
-
-form('loda')
-
-console.log('test end');
-
-
-const fail = (msg: string) => {
-    throw new Error(msg);
 }
-
+;
+form('loda');
+console.log('test end');
+const fail = (msg) => {
+    throw new Error(msg);
+};
 // console.log(`error: ${fail}`);
-
-
-function alwaysLog(name: string) : never {
-    while(true) {
+function alwaysLog(name) {
+    while (true) {
         console.log(name);
     }
 }
-
-alwaysLog('ashraf')
-
-console.log('s');
+alwaysLog('ashraf');

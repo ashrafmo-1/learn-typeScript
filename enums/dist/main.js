@@ -23,3 +23,16 @@ else if (level === 'levelThree') {
 else {
     console.log(`your level is ${level} because you have a ${lvl.levelFOre}`);
 }
+function returnAge() {
+    return 20;
+}
+var frindsAge;
+(function (frindsAge) {
+    frindsAge[frindsAge["elkwawy"] = 20] = "elkwawy";
+    frindsAge[frindsAge["ashraf"] = 21.5] = "ashraf";
+    frindsAge[frindsAge["shino"] = 22] = "shino";
+    frindsAge[frindsAge["ahmed"] = 19] = "ahmed";
+    frindsAge[frindsAge["mahmoud"] = 22] = "mahmoud";
+    frindsAge[frindsAge["ali"] = 2] = "ali";
+})(frindsAge || (frindsAge = {}));
+console.log(2);

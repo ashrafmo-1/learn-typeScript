@@ -36,4 +36,19 @@ if (level === 'levelOne') {
     console.log(`your level is ${level} because you have a ${lvl.levelFOre}`);
 }
 
+function returnAge() : number {
+    return 20;
+}
+
 // Part Two
+const enum frindsAge {
+    elkwawy = 20,
+    ashraf = 21.5,
+    shino = 22,
+    ahmed = 10 + 9, // can you use operators
+    mahmoud = elkwawy + 2, // import from current enum
+    ali = lvl.levelOne - 998, // import from another enum
+    // sayid = returnAge(),
+}
+
+console.log(frindsAge.ali);

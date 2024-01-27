@@ -10,19 +10,25 @@
     --- Use Read Only And Optional Operator
 */
 
+type str = string;
+type num = number;
+type bool = boolean;
+
+
 interface car {
-    name: string,
-    model: number | string,
-    color: string,
-    needFix: boolean,
+    readonly name: str,
+    model: num | str,
+    color?: str,
+    needFix: bool,
 }
 
 let lanser: car = {
-    name: 'shark',
+    name : 'shark',
     model: 2002,
-    color: 'white and blue',
     needFix: false
 }
+
+// lanser.name = 'krsh'; // Cannot assign to 'name' because it is a read-only property.
 
 console.log(lanser.name);
 console.log(lanser.model);
@@ -38,4 +44,38 @@ function showInfo(info: car) {
     console.log(info.needFix);
 }
 
-showInfo({name: 'bmw', model: 2022, color: 'red', needFix: true});
+showInfo({name: 'bmw', model: 2022, needFix: true});
+
+
+
+/* Interface Method And Parameters */
+interface user {
+    name: str;
+    id: num;
+    age: num;
+    sayHello(): str; // method
+    showInformation: () => str | num; // method by arrow
+    sum: (n: num) => num
+}
+
+let info: user = {
+    name: 'ashraf',
+    id: 9919,
+    age: 21.5,
+    sayHello() {
+        return `hello ${this.name}`
+    },
+    showInformation: () => {
+        return `hello ${info.name} your age id ${info.age}`;
+    },
+    sum: (n: num) => {
+        return n + 10
+    }
+}
+
+console.log(info.name);
+console.log(info.id);
+console.log(info.age);
+console.log(info.sayHello);
+console.log(info.showInformation);
+console.log(info.sum(2));

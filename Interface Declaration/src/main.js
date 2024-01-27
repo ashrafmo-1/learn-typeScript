@@ -33,3 +33,14 @@ console.log(info.age);
 console.log(info.sayHello());
 console.log(info.showInformation());
 console.log(info.sum(2));
+let page = {
+    theme: 'dark',
+    bgCanging: false,
+    fontWight: 'bold',
+};
+let portfolio = {
+    navHeight: 1800,
+    landingInnerhtnl: 'hello world',
+    boxesLeigth: 12,
+    nameTitle: 'ash-education',
+};

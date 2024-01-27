@@ -79,3 +79,46 @@ console.log(info.age);
 console.log(info.sayHello());
 console.log(info.showInformation());
 console.log(info.sum(2));
+
+
+/* Interface ReOpen And Use Cases */
+
+// page for example
+interface setting {
+    theme: str;
+    bgCanging: bool;
+}
+
+interface setting {
+    fontWight: str;
+}
+
+let page: setting = {
+    theme: 'dark',
+    bgCanging: false,
+    fontWight: 'bold',
+}
+
+/* Interface Extend */
+// مشابه للتوريث الخاص بال oop javascript
+
+interface homePage {
+    navHeight: num;
+    landingInnerhtnl: str;
+}
+
+interface projectsPage {
+    boxesLeigth: num;
+}
+
+interface allPages extends homePage,projectsPage {
+    nameTitle: str;
+}
+
+let portfolio: allPages ={
+    navHeight: 1800,
+    landingInnerhtnl: 'hello world',
+    boxesLeigth: 12,
+    nameTitle: 'ash-education',
+
+}

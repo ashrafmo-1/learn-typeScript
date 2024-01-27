@@ -32,7 +32,7 @@ let lanser: car = {
 
 console.log(lanser.name);
 console.log(lanser.model);
-console.log(lanser.color);
+// console.log(lanser.color);
 console.log(lanser.needFix);
 
 
@@ -40,7 +40,7 @@ console.log(lanser.needFix);
 function showInfo(info: car) {
     console.log(`car name is ${info.name}`);
     console.log(info.model);
-    console.log(info.color);
+    // console.log(info.color);
     console.log(info.needFix);
 }
 
@@ -76,6 +76,6 @@ let info: user = {
 console.log(info.name);
 console.log(info.id);
 console.log(info.age);
-console.log(info.sayHello);
-console.log(info.showInformation);
+console.log(info.sayHello());
+console.log(info.showInformation());
 console.log(info.sum(2));
